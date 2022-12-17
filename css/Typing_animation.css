@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500;600;700&display=swap');
+/*
+
+Medium 500 - for paragraphs, font size 14.
+SemiBold 600 - 
+Bold 700
+
+*/
+
+:root{
+    --main-blue: #233043;
+    --main-blue-light: #31445e;
+    --main-blue-lighter: #4c6a95;
+
+    --main-gold: #b99044;
+    --main-gold-light: #eee5d2;
+
+    --white-blue: #dfe9f1;
+    --white-light: #eff5fa;
+    --white-pure: #fff; 
+
+    --gray-for-text: #585757;
+    --gray-for-text-light: #a9a9a9;
+
+    --gradient-light-blue: ;
+    --lighter-blue-gradient: linear-gradient(to bottom, var(--main-blue-lighter), rgba(76, 106, 149,0)) ;
+    --light-blue-gradient: linear-gradient(to bottom, var(--main-blue-light), rgba(49, 68, 94,0)) ;
+
+    --font-Monsterrat-medium: 500;
+    --font-Monsterrat-SemiBold: 600;
+    --font-Monsterrat-Bold: 500;
+
+    --font-Monsterrat:'Montserrat', sans-serif;
+    --font-League-Spartan:'League Spartan', sans-serif;
+
+}
+
+.hero-left {
+    display: block;
+    justify-content: start;
+    align-items: center;
+}
+.hero-left h2 {
+    font-family: var(--font-League-Spartan);
+    font-size: 3rem;
+    font-weight: var(--font-Monsterrat-Bold);
+    text-align: start;
+    overflow: hidden;
+    color: var(--white-pure);
+}
+.hero-left h2 span.typed-text {
+    font-family: var(--font-League-Spartan);
+    font-size: 3rem;
+    font-weight: var(--font-Monsterrat-Bold);
+    color: var(--main-gold);
+}
+.hero-left h2 span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.hero-left h2 span.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+@media only screen and (max-width: 768px){
+    .hero-left h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .hero-left h2 {
+        font-size: 2rem;
+    }
+    .hero-left h2 span.typed-text {
+        font-size: 2rem;
+    }
+}

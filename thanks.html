@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-con" href="images/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a53972f1f4.js" crossorigin="anonymous"></script>
+
+    <title>ThankYou!</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500;600;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            position: relative;
+            background-color: #233043;
+            height: 100vh;
+            width: 100vw;
+        }
+        .thanks-holder{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%,-50%);
+         transform: translate(-50%,-50%);
+         align-items: center;
+         text-align: center;
+        }
+        i{
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        color: #b99044;
+        }
+        h1{
+            font-family: 'League Spartan', sans-serif;
+            font-size: 10rem;
+            width: 100%;
+            color: #b99044;
+            margin-bottom: 3rem;
+        }
+        button{
+            background-color: #b99044;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family:'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.25rem;
+            box-shadow: -5px 5px 17px rgba(29, 30, 30, 0.311) ;
+            transition: ease-in-out 0.2s;
+            margin-bottom: 6rem;
+        }
+        button:hover{
+            background-color: #a9a9a9;
+            color: #585757;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="thanks-holder">
+        <i class="fa-solid fa-circle-check"></i>
+            <h1>Thank you!</h1>
+            <button onclick="history.back()">Back to page</button>
+        </div>
+    </div>
+</body>
+</html>
